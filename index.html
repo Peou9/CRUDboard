@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자유게시판</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-left">
+        <a href="index.html" class="logo">자유게시판</a>
+      </div>
+      <div class="nav-right">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="검색어를 입력하세요"
+        />
+        <a href="boradwrite.html" id="write-link"><button>글쓰기</button></a>
+        <a href="boradsign.html" id="login-link"><button>로그인</button></a>
+        <button id="logout-btn" style="display: none">로그아웃</button>
+        <span id="login-user" style="color: white; margin-left: 10px"></span>
+      </div>
+    </nav>
+
+    <table id="board">
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>작성자</th>
+          <th>작성일</th>
+          <th>추천</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="pagination" style="margin-top: 20px; text-align: center"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글 상세보기</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="post-container" id="post-detail"></div>
+
+    <div style="text-align: center; margin-top: 20px">
+      <button onclick="recommendPost()" class="recommend-btn">추천</button>
+      <a href="index.html"><button>목록으로</button></a>
+    </div>
+
+    <div class="comment-section">
+      <div id="comment-list"></div>
+      <div id="comment-section" style="margin-top: 10px">
+        <p id="comment-user"></p>
+        <input type="text" id="comment-input" placeholder="댓글을 입력하세요" />
+        <button id="comment-submit" onclick="addComment()">댓글 등록</button>
+      </div>
+    </div>
+
+    <script src="boardview.js"></script>
+  </body>
+</html>

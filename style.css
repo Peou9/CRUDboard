@@ -1,0 +1,170 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#board {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#board th,
+#board td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+#board th {
+  background-color: #2c3e50;
+  color: white;
+}
+
+#board tr:hover {
+  background-color: #f0f0f0;
+}
+
+button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#pagination button {
+  background-color: white;
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+#pagination button:disabled {
+  background-color: #ccc;
+  color: #666;
+  border: none;
+}
+
+#navbar {
+  background-color: #2c3e50;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.nav-left .logo {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#navbar input[type="text"] {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+#navbar button {
+  background-color: #3498db;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#navbar button:hover {
+  background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 20px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #navbar input[type="text"],
+  #navbar button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  #board th,
+  #board td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  #pagination {
+    text-align: center;
+  }
+
+  #pagination button {
+    margin: 3px 4px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  #board {
+    font-size: 0.85rem;
+  }
+
+  #navbar {
+    font-size: 0.9rem;
+  }
+
+  .nav-left .logo {
+    font-size: 1.2rem;
+  }
+}
