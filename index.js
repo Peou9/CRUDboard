@@ -111,7 +111,7 @@ function registerUser() {
   users.push({ username, password });
   localStorage.setItem("users", JSON.stringify(users));
   alert("회원가입 완료! 로그인 해주세요.");
-  window.location.href = "boradsign.html";
+  window.location.href = "boardsign.html";
 }
 
 function loginUser() {
